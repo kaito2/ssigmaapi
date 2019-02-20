@@ -18,8 +18,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ssigmaapi/type/trade.proto',
   package='ssigmaapi.type',
   syntax='proto3',
-  serialized_options=_b('Z0github.com/sansigma/ssigmaapigo/type/trade;trade'),
-  serialized_pb=_b('\n\x1assigmaapi/type/trade.proto\x12\x0essigmaapi.type\"/\n\x06Trades\x12%\n\x06trades\x18\x01 \x03(\x0b\x32\x15.ssigmaapi.type.Trade\"\x98\x01\n\x05Trade\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08trade_id\x18\x02 \x01(\t\x12\x10\n\x08\x65xchange\x18\x03 \x01(\t\x12\x0c\n\x04\x62\x61se\x18\x04 \x01(\t\x12\r\n\x05quote\x18\x05 \x01(\t\x12\r\n\x05price\x18\x06 \x01(\x01\x12\x0e\n\x06\x61mount\x18\x07 \x01(\x01\x12\x11\n\ttimestamp\x18\x08 \x01(\x03\x12\x0c\n\x04side\x18\t \x01(\tB2Z0github.com/sansigma/ssigmaapigo/type/trade;tradeb\x06proto3')
+  serialized_options=_b('Z.github.com/kaito2/ssigmaapigo/type/trade;trade'),
+  serialized_pb=_b('\n\x1assigmaapi/type/trade.proto\x12\x0essigmaapi.type\"/\n\x06Trades\x12%\n\x06trades\x18\x01 \x03(\x0b\x32\x15.ssigmaapi.type.Trade\"\x98\x01\n\x05Trade\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08trade_id\x18\x02 \x01(\t\x12\x10\n\x08\x65xchange\x18\x03 \x01(\t\x12\x0c\n\x04\x62\x61se\x18\x04 \x01(\t\x12\r\n\x05quote\x18\x05 \x01(\t\x12\r\n\x05price\x18\x06 \x01(\x01\x12\x0e\n\x06\x61mount\x18\x07 \x01(\x01\x12\x11\n\ttimestamp\x18\x08 \x01(\x03\x12\x0c\n\x04side\x18\t \x01(\tB0Z.github.com/kaito2/ssigmaapigo/type/trade;tradeb\x06proto3')
 )
 
 

@@ -20,8 +20,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ssigmaapi/pashirirest/v1/pashirirest.proto',
   package='ssigmaapi.pashirirest.v1',
   syntax='proto3',
-  serialized_options=_b('Z:github.com/sansigma/ssigmaapigo/pashirirest/v1;pashirirest'),
-  serialized_pb=_b('\n*ssigmaapi/pashirirest/v1/pashirirest.proto\x12\x18ssigmaapi.pashirirest.v1\x1a\x1bssigmaapi/type/market.proto\x1a\x1essigmaapi/type/orderbook.proto2]\n\x14PashiriRestServiceV1\x12\x45\n\x0cGetOrderBook\x12\x16.ssigmaapi.type.Market\x1a\x19.ssigmaapi.type.OrderBook\"\x00\x30\x01\x42<Z:github.com/sansigma/ssigmaapigo/pashirirest/v1;pashirirestb\x06proto3')
+  serialized_options=_b('Z8github.com/kaito2/ssigmaapigo/pashirirest/v1;pashirirest'),
+  serialized_pb=_b('\n*ssigmaapi/pashirirest/v1/pashirirest.proto\x12\x18ssigmaapi.pashirirest.v1\x1a\x1bssigmaapi/type/market.proto\x1a\x1essigmaapi/type/orderbook.proto2]\n\x14PashiriRestServiceV1\x12\x45\n\x0cGetOrderBook\x12\x16.ssigmaapi.type.Market\x1a\x19.ssigmaapi.type.OrderBook\"\x00\x30\x01\x42:Z8github.com/kaito2/ssigmaapigo/pashirirest/v1;pashirirestb\x06proto3')
   ,
   dependencies=[ssigmaapi_dot_type_dot_market__pb2.DESCRIPTOR,ssigmaapi_dot_type_dot_orderbook__pb2.DESCRIPTOR,])
 

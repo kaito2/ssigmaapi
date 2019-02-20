@@ -20,8 +20,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ssigmaapi/pashiriwebsocket/v1/pashiriwebsocket.proto',
   package='ssigmaapi.pashiriwebsocket.v1',
   syntax='proto3',
-  serialized_options=_b('ZDgithub.com/sansigma/ssigmaapigo/pashiriwebsocket/v1;pashiriwebsocket'),
-  serialized_pb=_b('\n4ssigmaapi/pashiriwebsocket/v1/pashiriwebsocket.proto\x12\x1dssigmaapi.pashiriwebsocket.v1\x1a\x1bssigmaapi/type/market.proto\x1a\x1assigmaapi/type/trade.proto2\\\n\x19PashiriWebsocketServiceV1\x12?\n\tGetTrades\x12\x16.ssigmaapi.type.Market\x1a\x16.ssigmaapi.type.Trades\"\x00\x30\x01\x42\x46ZDgithub.com/sansigma/ssigmaapigo/pashiriwebsocket/v1;pashiriwebsocketb\x06proto3')
+  serialized_options=_b('ZBgithub.com/kaito2/ssigmaapigo/pashiriwebsocket/v1;pashiriwebsocket'),
+  serialized_pb=_b('\n4ssigmaapi/pashiriwebsocket/v1/pashiriwebsocket.proto\x12\x1dssigmaapi.pashiriwebsocket.v1\x1a\x1bssigmaapi/type/market.proto\x1a\x1assigmaapi/type/trade.proto2\\\n\x19PashiriWebsocketServiceV1\x12?\n\tGetTrades\x12\x16.ssigmaapi.type.Market\x1a\x16.ssigmaapi.type.Trades\"\x00\x30\x01\x42\x44ZBgithub.com/kaito2/ssigmaapigo/pashiriwebsocket/v1;pashiriwebsocketb\x06proto3')
   ,
   dependencies=[ssigmaapi_dot_type_dot_market__pb2.DESCRIPTOR,ssigmaapi_dot_type_dot_trade__pb2.DESCRIPTOR,])
 

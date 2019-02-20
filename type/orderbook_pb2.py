@@ -18,8 +18,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ssigmaapi/type/orderbook.proto',
   package='ssigmaapi.type',
   syntax='proto3',
-  serialized_options=_b('Z8github.com/sansigma/ssigmaapigo/type/orderbook;orderbook'),
-  serialized_pb=_b('\n\x1essigmaapi/type/orderbook.proto\x12\x0essigmaapi.type\"\'\n\x06\x42idAsk\x12\r\n\x05price\x18\x01 \x01(\x01\x12\x0e\n\x06\x61mount\x18\x02 \x01(\x01\"\xa9\x01\n\tOrderBook\x12\x10\n\x08\x65xchange\x18\x01 \x01(\t\x12\x0c\n\x04\x62\x61se\x18\x02 \x01(\t\x12\r\n\x05quote\x18\x03 \x01(\t\x12\x0e\n\x06symbol\x18\x04 \x01(\t\x12$\n\x04\x62ids\x18\x05 \x03(\x0b\x32\x16.ssigmaapi.type.BidAsk\x12$\n\x04\x61sks\x18\x06 \x03(\x0b\x32\x16.ssigmaapi.type.BidAsk\x12\x11\n\ttimestamp\x18\x07 \x01(\x03\x42:Z8github.com/sansigma/ssigmaapigo/type/orderbook;orderbookb\x06proto3')
+  serialized_options=_b('Z6github.com/kaito2/ssigmaapigo/type/orderbook;orderbook'),
+  serialized_pb=_b('\n\x1essigmaapi/type/orderbook.proto\x12\x0essigmaapi.type\"\'\n\x06\x42idAsk\x12\r\n\x05price\x18\x01 \x01(\x01\x12\x0e\n\x06\x61mount\x18\x02 \x01(\x01\"\xa9\x01\n\tOrderBook\x12\x10\n\x08\x65xchange\x18\x01 \x01(\t\x12\x0c\n\x04\x62\x61se\x18\x02 \x01(\t\x12\r\n\x05quote\x18\x03 \x01(\t\x12\x0e\n\x06symbol\x18\x04 \x01(\t\x12$\n\x04\x62ids\x18\x05 \x03(\x0b\x32\x16.ssigmaapi.type.BidAsk\x12$\n\x04\x61sks\x18\x06 \x03(\x0b\x32\x16.ssigmaapi.type.BidAsk\x12\x11\n\ttimestamp\x18\x07 \x01(\x03\x42\x38Z6github.com/kaito2/ssigmaapigo/type/orderbook;orderbookb\x06proto3')
 )
 
 

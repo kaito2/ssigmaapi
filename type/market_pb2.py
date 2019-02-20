@@ -18,8 +18,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ssigmaapi/type/market.proto',
   package='ssigmaapi.type',
   syntax='proto3',
-  serialized_options=_b('Z2github.com/sansigma/ssigmaapigo/type/market;market'),
-  serialized_pb=_b('\n\x1bssigmaapi/type/market.proto\x12\x0essigmaapi.type\"*\n\x06Market\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\tB4Z2github.com/sansigma/ssigmaapigo/type/market;marketb\x06proto3')
+  serialized_options=_b('Z0github.com/kaito2/ssigmaapigo/type/market;market'),
+  serialized_pb=_b('\n\x1bssigmaapi/type/market.proto\x12\x0essigmaapi.type\"*\n\x06Market\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\tB2Z0github.com/kaito2/ssigmaapigo/type/market;marketb\x06proto3')
 )
 
 
