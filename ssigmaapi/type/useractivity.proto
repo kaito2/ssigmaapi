@@ -20,13 +20,12 @@ message Point {
     int64 y = 2;
 }
 
-enum WindowState {
-  NORMAL = 0;
-  MAXIMIZED = 1;
-  MINIMIZED = 2;
-}
-
 message ApplicationWindow {
+    enum WindowState {
+        NORMAL = 0;
+        MAXIMIZED = 1;
+        MINIMIZED = 2;
+    }
     Point lefttop = 1;
     int64 height = 2;
     int64 width = 3;
@@ -35,6 +34,6 @@ message ApplicationWindow {
     string description = 6; // アプリ詳細名（エクスプローラー、Slack、Google Chromeなど）
     string company = 7; // アプリ開発元
     bool is_foreground = 8;
-    WindowState = 9;
+    WindowState window_state = 9;
     int64 timestamp = 10; // milisecond
 }
