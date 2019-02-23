@@ -34,7 +34,7 @@ message ApplicationWindow {
     Point lefttop = 1;
     int64 height = 2;
     int64 width = 3;
-    string title = 4; // アプリケーションタイトル
+    string title = 4; // ウィンドウタイトル
     string program_name = 5; // アプリ名（MicrosoftR WindowsR Operation System、Slack、Google Chromeなど）
     string description = 6; // アプリ詳細名（エクスプローラー、Slack、Google Chromeなど）
     string company = 7; // アプリ開発元
