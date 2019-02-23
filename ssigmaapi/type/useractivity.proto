@@ -5,10 +5,15 @@ package ssigmaapi.type;
 option go_package = "github.com/kaito2/ssigmaapigo/type/useractivity;useractivity";
 
 message UserActivity {
+    enum UserState {
+      Working = 0;
+      Away =1;
+    }
     int64 start_timestamp = 1; // milisecond
     int64 end_timestamp = 2; // milisecond
     KeyboardInput keyboard_input = 3;
     repeated ApplicationWindow window_list = 4;
+    UserState user_state = 5;
 }
 
 message KeyboardInput {
