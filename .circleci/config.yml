@@ -168,7 +168,7 @@ jobs:
         command: |
           echo "clone csharp"
           clonesuccess=0
-          git clone -b ${CIRCLE_BRANCH} https://${GH_TOKEN}@github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}csharp.git || clonesuccess=$?
+          git clone -b ${CIRCLE_BRANCH} https://${GH_TOKEN}@github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}csharp.git || clonesuccess=$?
           if [ $clonesuccess != 0 ]; then
             echo "branch ${CIRCLE_BRANCH} is not existed"
             git clone https://${GH_TOKEN}@github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}csharp.git
