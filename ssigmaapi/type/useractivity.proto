@@ -5,10 +5,15 @@ package ssigmaapi.type;
 option go_package = "github.com/kaito2/ssigmaapigo/type/useractivity;useractivity";
 
 message UserActivity {
+    enum UserState {
+      WORKING = 0;
+      AWAY =1;
+    }
     int64 start_timestamp = 1; // milisecond
     int64 end_timestamp = 2; // milisecond
     KeyboardInput keyboard_input = 3;
     repeated ApplicationWindow window_list = 4;
+    UserState user_state = 5;
 }
 
 message KeyboardInput {
@@ -29,7 +34,7 @@ message ApplicationWindow {
     Point lefttop = 1;
     int64 height = 2;
     int64 width = 3;
-    string title = 4; // アプリケーションタイトル
+    string title = 4; // ウィンドウタイトル
     string program_name = 5; // アプリ名（MicrosoftR WindowsR Operation System、Slack、Google Chromeなど）
     string description = 6; // アプリ詳細名（エクスプローラー、Slack、Google Chromeなど）
     string company = 7; // アプリ開発元
