@@ -190,7 +190,6 @@ workflows:
     - build:
         requires:
         - lint
-
     - push:
         requires:
         - lint
