@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-setup(name='ssigmaapi',
+setup(name='ssigmaapipython',
       version='0.1.0',
       description='Python ssigmaapi code',
       author='kaito2',
