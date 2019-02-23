@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package ssigmaapi.productibit.v1;
+
+import "ssigmaapi/type/useractivity.proto";
+import "google/protobuf/empty.proto";
+
+option go_package = "github.com/kaito2/ssigmaapigo/productibit/v1;productibit";
+
+message SensorMessage {
+    string uid = 1;
+    repeated ssigmaapi.type.UserActivity activities = 2;
+}
+
+service ProductibitServiceV1 {
+    rpc UploadSensor (SensorMessage) returns (google.protobuf.Empty) {}
+}
+

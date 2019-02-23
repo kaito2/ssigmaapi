@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package ssigmaapi.type;
+
+option go_package = "github.com/kaito2/ssigmaapigo/type/useractivity;useractivity";
+
+message UserActivity {
+    int64 start_timestamp = 1; // milisecond
+    int64 end_timestamp = 2; // milisecond
+    KeyboardInput keyboard_input = 3;
+    repeated ApplicationWindow window_list = 4;
+}
+
+message KeyboardInput {
+    int64 stroke_count = 1;
+}
+
+message Point {
+    int64 x = 1;
+    int64 y = 2;
+}
+
+message ApplicationWindow {
+    enum WindowState {
+        NORMAL = 0;
+        MAXIMIZED = 1;
+        MINIMIZED = 2;
+    }
+    Point lefttop = 1;
+    int64 height = 2;
+    int64 width = 3;
+    string title = 4; // アプリケーションタイトル
+    string program_name = 5; // アプリ名（MicrosoftR WindowsR Operation System、Slack、Google Chromeなど）
+    string description = 6; // アプリ詳細名（エクスプローラー、Slack、Google Chromeなど）
+    string company = 7; // アプリ開発元
+    bool is_foreground = 8;
+    WindowState window_state = 9;
+    int64 timestamp = 10; // milisecond
+}
