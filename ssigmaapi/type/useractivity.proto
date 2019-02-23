@@ -5,14 +5,14 @@ package ssigmaapi.type;
 option go_package = "github.com/kaito2/ssigmaapigo/type/useractivity;useractivity";
 
 message UserActivity {
-    int64 startTimestamp = 1; // milisecond
-    int64 endTimestamp = 2; // milisecond
-    KeyboardInput keyboardInput = 3;
-    repeated ApplicationWindow windowList = 4;
+    int64 start_timestamp = 1; // milisecond
+    int64 end_timestamp = 2; // milisecond
+    KeyboardInput keyboard_input = 3;
+    repeated ApplicationWindow window_list = 4;
 }
 
 message KeyboardInput {
-    int64 clickCount = 1;
+    int64 click_count = 1;
 }
 
 message Point {
@@ -26,7 +26,7 @@ message ApplicationWindow {
     int64 width = 3;
     int64 zindex = 4;
     string title = 5; // アプリケーションタイトル
-    string exeName = 6; // アプリ名
-    bool isActive = 7;
+    string exe_name = 6; // アプリ名
+    bool is_active = 7;
     int64 timestamp = 8; // milisecond
 }
