@@ -83,7 +83,7 @@ jobs:
           git -C ./${CIRCLE_PROJECT_REPONAME}go commit -m "gen" || result=$?
           echo "result ${result}"
           if [ $result -eq 0 ]; then
-            git -C ./${CIRCLE_PROJECT_REPONAME}go push origin ${CIRCLE_BRANCH} 2> /dev/null
+            git -C ./${CIRCLE_PROJECT_REPONAME}go push origin ${CIRCLE_BRANCH}
           fi
 
     - run:
