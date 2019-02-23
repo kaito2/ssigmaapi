@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package ssigmaapi.type;
+
+option go_package = "github.com/kaito2/ssigmaapigo/type/useractivity;useractivity";
+
+message UserActivity {
+    int64 startTimestamp = 1; // milisecond
+    int64 endTimestamp = 2; // milisecond
+    KeyboardInput keyboardInput = 3;
+    repeated ApplicationWindow windowList = 4;
+}
+
+message KeyboardInput {
+    int64 clickCount = 1;
+}
+
+message Point {
+    int64 x = 1;
+    int64 y = 2;
+}
+
+message ApplicationWindow {
+    Point lefttop = 1;
+    int64 height = 2;
+    int64 width = 3;
+    int64 zindex = 4;
+    string title = 5; // アプリケーションタイトル
+    string exeName = 6; // アプリ名
+    bool isActive = 7;
+    int64 timestamp = 8; // milisecond
+}
