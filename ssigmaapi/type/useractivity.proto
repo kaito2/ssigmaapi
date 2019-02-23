@@ -12,7 +12,7 @@ message UserActivity {
 }
 
 message KeyboardInput {
-    int64 click_count = 1;
+    int64 stroke_count = 1;
 }
 
 message Point {
@@ -20,13 +20,21 @@ message Point {
     int64 y = 2;
 }
 
+enum WindowState {
+  NORMAL = 0;
+  MAXIMIZED = 1;
+  MINIMIZED = 2;
+}
+
 message ApplicationWindow {
     Point lefttop = 1;
     int64 height = 2;
     int64 width = 3;
-    int64 zindex = 4;
-    string title = 5; // アプリケーションタイトル
-    string exe_name = 6; // アプリ名
-    bool is_active = 7;
-    int64 timestamp = 8; // milisecond
+    string title = 4; // アプリケーションタイトル
+    string program_name = 5; // アプリ名（MicrosoftR WindowsR Operation System、Slack、Google Chromeなど）
+    string description = 6; // アプリ詳細名（エクスプローラー、Slack、Google Chromeなど）
+    string company = 7; // アプリ開発元
+    bool is_foreground = 8;
+    WindowState = 9;
+    int64 timestamp = 10; // milisecond
 }
