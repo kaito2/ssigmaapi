@@ -9,8 +9,8 @@ message UserActivity {
       WORKING = 0;
       AWAY = 1;
     }
-    int32 start_timestamp = 1; // milisecond
-    int32 end_timestamp = 2; // milisecond
+    int32 start_timestamp = 1; // second
+    int32 end_timestamp = 2; // second
     KeyboardInput keyboard_input = 3;
     repeated ApplicationWindow window_list = 4;
     UserState user_state = 5;
@@ -49,5 +49,5 @@ message ApplicationWindow {
     string company = 7; // アプリ開発元
     bool is_foreground = 8;
     WindowState window_state = 9;
-    int32 timestamp = 10; // milisecond
+    int32 timestamp = 10; // second
 }
