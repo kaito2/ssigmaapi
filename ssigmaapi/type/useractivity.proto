@@ -15,6 +15,7 @@ message UserActivity {
     repeated ApplicationWindow window_list = 4;
     UserState user_state = 5;
     MouseInput mouse_input = 6;
+    int64 switch_application_count = 7;
 }
 
 message KeyboardInput {
@@ -22,9 +23,10 @@ message KeyboardInput {
 }
 
 message MouseInput {
-    int64 left_click_count = 1;
-    int64 middle_click_count = 2;
-    int64 right_click_count = 3;
+    int64 click_count = 1;
+    int64 left_click_count = 2;
+    int64 middle_click_count = 3;
+    int64 right_click_count = 4;
 }
 
 message Point {
