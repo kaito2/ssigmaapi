@@ -7,17 +7,24 @@ option go_package = "github.com/kaito2/ssigmaapigo/type/useractivity;useractivit
 message UserActivity {
     enum UserState {
       WORKING = 0;
-      AWAY =1;
+      AWAY = 1;
     }
     int64 start_timestamp = 1; // milisecond
     int64 end_timestamp = 2; // milisecond
     KeyboardInput keyboard_input = 3;
     repeated ApplicationWindow window_list = 4;
     UserState user_state = 5;
+    MouseInput mouse_input = 6;
 }
 
 message KeyboardInput {
     int64 stroke_count = 1;
+}
+
+message MouseInput {
+    int64 left_click_count = 1;
+    int64 middle_click_count = 2;
+    int64 right_click_count = 3;
 }
 
 message Point {
