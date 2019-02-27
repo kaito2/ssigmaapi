@@ -9,29 +9,29 @@ message UserActivity {
       WORKING = 0;
       AWAY = 1;
     }
-    int64 start_timestamp = 1; // milisecond
-    int64 end_timestamp = 2; // milisecond
+    int32 start_timestamp = 1; // second
+    int32 end_timestamp = 2; // second
     KeyboardInput keyboard_input = 3;
     repeated ApplicationWindow window_list = 4;
     UserState user_state = 5;
     MouseInput mouse_input = 6;
-    int64 switch_application_count = 7;
+    int32 switch_application_count = 7;
 }
 
 message KeyboardInput {
-    int64 stroke_count = 1;
+    int32 stroke_count = 1;
 }
 
 message MouseInput {
-    int64 click_count = 1;
-    int64 left_click_count = 2;
-    int64 middle_click_count = 3;
-    int64 right_click_count = 4;
+    int32 click_count = 1;
+    int32 left_click_count = 2;
+    int32 middle_click_count = 3;
+    int32 right_click_count = 4;
 }
 
 message Point {
-    int64 x = 1;
-    int64 y = 2;
+    int32 x = 1;
+    int32 y = 2;
 }
 
 message ApplicationWindow {
@@ -41,13 +41,13 @@ message ApplicationWindow {
         MINIMIZED = 2;
     }
     Point lefttop = 1;
-    int64 height = 2;
-    int64 width = 3;
+    int32 height = 2;
+    int32 width = 3;
     string title = 4; // ウィンドウタイトル
     string program_name = 5; // アプリ名（MicrosoftR WindowsR Operation System、Slack、Google Chromeなど）
     string description = 6; // アプリ詳細名（エクスプローラー、Slack、Google Chromeなど）
     string company = 7; // アプリ開発元
     bool is_foreground = 8;
     WindowState window_state = 9;
-    int64 timestamp = 10; // milisecond
+    int32 timestamp = 10; // second
 }
